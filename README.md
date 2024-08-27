@@ -21,7 +21,7 @@ Además, el sistema proporcionará la funcionalidad de generar facturas simulada
 
 El control y seguimiento del stock de los artículos se gestionará según el siguiente diagrama de clases:
 
-![Diagrama de Clases](ruta_a_tu_imagen_diagrama_de_clases.png)
+![Diagrama de Clases](DiagramaDeClasesProyecto.png)
 
 > _Nota: Asegúrate de agregar la imagen correspondiente del diagrama de clases en el repositorio._
 
