@@ -23,8 +23,6 @@ El control y seguimiento del stock de los artículos se gestionará según el si
 
 ![Diagrama de Clases](DiagramaDeClasesProyecto.png)
 
-> _Nota: Asegúrate de agregar la imagen correspondiente del diagrama de clases en el repositorio._
 
----
 
 Este proyecto es parte del trabajo de fin de ciclo, buscando integrar los conocimientos adquiridos y aplicarlos en un entorno de desarrollo real.
