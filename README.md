@@ -15,14 +15,16 @@ El proyecto consiste en desarrollar una plataforma de comercio electrónico espe
 
 ### Generación de Facturas
 
-Además, el sistema proporcionará la funcionalidad de generar facturas simuladas para los artículos que el cliente adquiera, brindando una experiencia completa de compra.
+La aplicación podrá generar facturas simuladas a los usuarios en función de los artículos que adquiera.
 
 ## Diagrama de Clases
 
-El control y seguimiento del stock de los artículos se gestionará según el siguiente diagrama de clases:
+La aplicación se se basará fundamentalmente en el siguiente diagrama de clases(La aplicacion puede estar sujeta a algunos cambios)
 
 ![Diagrama de Clases](DiagramaDeClasesProyecto.png)
 
 
 
-Este proyecto es parte del trabajo de fin de ciclo, buscando integrar los conocimientos adquiridos y aplicarlos en un entorno de desarrollo real.
+Este proyecto es parte del trabajo de fin de ciclo, buscando integrar los conocimientos adquiridos y aplicarlos en un entorno de desarrollo real..
+
+Fundamentalmente aunará temario de Programación, Bases de Datos y Entornos de desarrollo
