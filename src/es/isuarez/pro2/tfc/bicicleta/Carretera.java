@@ -3,21 +3,24 @@ package es.isuarez.pro2.tfc.bicicleta;
 import es.isuarez.pro2.tfc.bicicleta.enums.Color;
 import es.isuarez.pro2.tfc.bicicleta.enums.Fabricante;
 import es.isuarez.pro2.tfc.bicicleta.enums.Material;
+import es.isuarez.pro2.tfc.bicicleta.enums.Sexo;
 
 public class Carretera extends Bicicleta {
 
 
     private float PesoTotal;
+
     /**
      * Constructor de la clase con todos los atributos heredados de la clase padre y su específico
      * correspondiente
      **/
     public Carretera(String talla, boolean disponible, String pesoCuadro,
                      double precio, int id, int ultimoId, Fabricante fabricante,
-                     Material material, Color color, float pesoTotal) {
-        super(talla, disponible, pesoCuadro, precio, id, ultimoId, fabricante, material, color);
+                     Material material, Color color, Sexo sexo, float pesoTotal) {
+        super(talla, disponible, pesoCuadro, precio, id, ultimoId, fabricante, material, color, sexo);
         PesoTotal = pesoTotal;
     }
+
     /**
      * Obtiene el valor del peso total de la bicicleta.
      *
@@ -36,8 +39,11 @@ public class Carretera extends Bicicleta {
     public void setPesoTotal(float pesoTotal) {
         PesoTotal = pesoTotal;
     }
-    /**Método toString() con validador implementado para evitar el NullPointerExceotion.En caso
-     * de que el valor sea nulo **/
+
+    /**
+     * Método toString() con validador implementado para evitar el NullPointerExceotion.En caso
+     * de que el valor sea nulo
+     **/
     @Override
     public String toString() {
         try {
@@ -52,5 +58,6 @@ public class Carretera extends Bicicleta {
             return "Error: No se ha podido obtener el peso de la bicicleta";
         }
     }
+
 
 }
