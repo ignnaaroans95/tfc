@@ -18,7 +18,7 @@ public class Carretera extends Bicicleta {
                      double precio, int id, int ultimoId, Fabricante fabricante,
                      Material material, Color color, Sexo sexo, float pesoTotal) {
         super(talla, disponible, pesoCuadro, precio, id, ultimoId, fabricante, material, color, sexo);
-this.pesoTotal=pesoTotal;
+        this.pesoTotal = pesoTotal;
     }
 
     /**
