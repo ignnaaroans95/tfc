@@ -16,7 +16,7 @@ public class Carretera extends Bicicleta {
      **/
     public Carretera(String talla, boolean disponible, String pesoCuadro,
                      double precio, int id, int ultimoId, Fabricante fabricante,
-                     Material material, Color color, Sexo sexo, float pesoTotal) {
+                     Material material, Color color,Sexo sexo, float pesoTotal) {
         super(talla, disponible, pesoCuadro, precio, id, ultimoId, fabricante, material, color, sexo);
         this.pesoTotal = pesoTotal;
     }
