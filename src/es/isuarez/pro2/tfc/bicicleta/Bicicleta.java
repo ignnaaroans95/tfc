@@ -36,7 +36,7 @@ public class Bicicleta {
      * Constructor de la clase.
      **/
 
-    public Bicicleta(String talla, boolean disponible, String pesoCuadro, double precio, int id, int ultimoId, Fabricante fabricante, Material material, Color color,Sexo sexo) {
+    public Bicicleta(String talla, boolean disponible, String pesoCuadro, double precio, int id, int ultimoId, Fabricante fabricante, Material material, Color color, Sexo sexo) {
         this.talla = talla;
         this.disponible = disponible;
         this.pesoCuadro = pesoCuadro;
@@ -45,7 +45,7 @@ public class Bicicleta {
         this.fabricante = fabricante;
         this.material = material;
         this.color = color;
-        this.sexo=sexo;
+        this.sexo = sexo;
     }
 
 
@@ -198,12 +198,11 @@ public class Bicicleta {
                 "\nUltimo Id: " + this.getUltimoId() +
                 "\nFabricante: " + this.getFabricante() +
                 "\nMaterial: " + this.getMaterial() +
-                "\nColor: " + this.getColor();
+                "\nColor: " + this.getColor() +
+                "\nSexo: " + this.getSexo();
 
 
     }
-
-
 
 
 }
