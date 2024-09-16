@@ -8,7 +8,7 @@ import es.isuarez.pro2.tfc.bicicleta.enums.Sexo;
 public class Carretera extends Bicicleta {
 
 
-    private float PesoTotal;
+    private float pesoTotal;
 
     /**
      * Constructor de la clase con todos los atributos heredados de la clase padre y su específico
@@ -18,7 +18,7 @@ public class Carretera extends Bicicleta {
                      double precio, int id, int ultimoId, Fabricante fabricante,
                      Material material, Color color, Sexo sexo, float pesoTotal) {
         super(talla, disponible, pesoCuadro, precio, id, ultimoId, fabricante, material, color, sexo);
-        PesoTotal = pesoTotal;
+this.pesoTotal=pesoTotal;
     }
 
     /**
@@ -27,7 +27,7 @@ public class Carretera extends Bicicleta {
      * @return el peso total de la bicicleta.
      */
     public float getPesoTotal() {
-        return PesoTotal;
+        return pesoTotal;
     }
 
     /**
@@ -37,7 +37,7 @@ public class Carretera extends Bicicleta {
      */
 
     public void setPesoTotal(float pesoTotal) {
-        PesoTotal = pesoTotal;
+        pesoTotal = pesoTotal;
     }
 
     /**
