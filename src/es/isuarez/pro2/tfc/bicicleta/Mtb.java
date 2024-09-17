@@ -1,21 +1,26 @@
 package es.isuarez.pro2.tfc.bicicleta;
 
 import es.isuarez.pro2.tfc.bicicleta.enums.*;
+import es.isuarez.pro2.tfc.bicicleta.enums.talla.DiametroRueda;
 import es.isuarez.pro2.tfc.bicicleta.enums.tipoMTB.*;
 
 
 public class Mtb extends Bicicleta{
 
 
-/***En este caso nos cevolverá la vantidad de platos así como el diámetro de la rueda*/
+/***En este caso nos cevolverá  así como el diámetro de la rueda y la cantidad de platos el tipo de mtb,  los cuales,
+ *  serán devuelto como una constante, ya que son  tipos diferenciados y todos están estandarizados ..*/
+
+
     private CantidadPlatos platos;
-    private float diametroRueda;
+    private DiametroRueda diametroRueda;
     protected tipoMTB mtb;
 
 
 
     /**
-     * Constructor de la clase.
+     * Constructor de la clase.Hereda todos los atributos de la clase padre -> Bicicleta . Además está compuesto
+     * por los atributos de la clase padre
      *
      * @param talla
      * @param disponible
@@ -28,38 +33,44 @@ public class Mtb extends Bicicleta{
      * @param color
      * @param sexo
      */
-    public Mtb(String talla, boolean disponible, String pesoCuadro, double precio, int id, int ultimoId, Fabricante fabricante, Material material, Color color, Sexo sexo,CantidadPlatos platos,float diametroRueda,tipoMTB mtb) {
+    public Mtb(String talla, boolean disponible, String pesoCuadro, double precio, int id, int ultimoId, Fabricante fabricante, Material material, Color color, Sexo sexo,CantidadPlatos platos,DiametroRueda diametroRueda,tipoMTB mtb) {
         super(talla, disponible, pesoCuadro, precio, id, ultimoId, fabricante, material, color, sexo);
         this.platos=platos;
         this.diametroRueda=diametroRueda;
         this.mtb=mtb;
 
     }
-
+    /**
+     *
+     * @return Nos retorna la cantidad de platos de la bicicleta como una constante.
+     */
     public CantidadPlatos getPlatos() {
         return platos;
     }
+    /**
+     *
 
-    public void setPlatos(CantidadPlatos platos) {
-        this.platos = platos;
-    }
-
-    public float getDiametroRueda() {
+    /**
+     * Nos retornará el diámetro de la rueda como una constante
+     * @return
+     */
+    public DiametroRueda getDiametroRueda() {
         return diametroRueda;
     }
-
-    public void setDiametroRueda(float diametroRueda) {
-        this.diametroRueda = diametroRueda;
-    }
-
+    /**
+    /***
+     *
+     * @return el tipo de mountain bike como una constante
+     */
     public tipoMTB getMtb() {
         return mtb;
     }
 
-    public void setMtb(tipoMTB mtb) {
-        this.mtb = mtb;
-    }
-
+    /**
+     *
+     *Método de sobreescritura que nos mostrará todos los datos de la clase y clase padre.  
+     *
+     * **/
     @Override
    public String toString(){
 
