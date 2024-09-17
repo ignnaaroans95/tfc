@@ -4,7 +4,8 @@ package es.isuarez.pro2.tfc.bicicleta.enums.talla;
 /**
  * Respresenta el tamaño del cuadro de la bicicleta de montaña en función a la
  * lungitud de la entrepierna del usuario. Todas ellas estarán correspondidas entre dos valores
- * .Mínimo y máximo a través de constantes.
+ * .Mínimo y máximo a través de constantes.Me he decantado
+ *  * por estos tipos de datos(constantes) ya que son datos estandárizados
  **/
 
 
