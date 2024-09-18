@@ -1,6 +1,9 @@
 package es.isuarez.pro2.tfc.bicicleta;
 
-import es.isuarez.pro2.tfc.bicicleta.enums.*;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Color;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Fabricante;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Material;
+import es.isuarez.pro2.tfc.bicicleta.enums.persona.Sexo;
 
 
 /**

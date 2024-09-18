@@ -1,4 +1,4 @@
-package es.isuarez.pro2.tfc.bicicleta.enums;
+package es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas;
 
 public enum Material {
 

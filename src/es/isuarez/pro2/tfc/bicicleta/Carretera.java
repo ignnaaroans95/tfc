@@ -1,9 +1,9 @@
 package es.isuarez.pro2.tfc.bicicleta;
 
-import es.isuarez.pro2.tfc.bicicleta.enums.Color;
-import es.isuarez.pro2.tfc.bicicleta.enums.Fabricante;
-import es.isuarez.pro2.tfc.bicicleta.enums.Material;
-import es.isuarez.pro2.tfc.bicicleta.enums.Sexo;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Color;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Fabricante;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Material;
+import es.isuarez.pro2.tfc.bicicleta.enums.persona.Sexo;
 
 public class Carretera extends Bicicleta {
 

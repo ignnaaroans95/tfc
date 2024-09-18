@@ -1,7 +1,11 @@
 package es.isuarez.pro2.tfc.bicicleta;
 
-import es.isuarez.pro2.tfc.bicicleta.enums.*;
-import es.isuarez.pro2.tfc.bicicleta.enums.talla.DiametroRueda;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.CantidadPlatos;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Color;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Fabricante;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Material;
+import es.isuarez.pro2.tfc.bicicleta.enums.persona.Sexo;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.talla.DiametroRueda;
 import es.isuarez.pro2.tfc.bicicleta.enums.tipoMTB.*;
 
 
@@ -33,7 +37,7 @@ public class Mtb extends Bicicleta{
      * @param color
      * @param sexo
      */
-    public Mtb(String talla, boolean disponible, String pesoCuadro, double precio, int id, int ultimoId, Fabricante fabricante, Material material, Color color, Sexo sexo,CantidadPlatos platos,DiametroRueda diametroRueda,tipoMTB mtb) {
+    public Mtb(String talla, boolean disponible, String pesoCuadro, double precio, int id, int ultimoId, Fabricante fabricante, Material material, Color color, Sexo sexo, CantidadPlatos platos, DiametroRueda diametroRueda, tipoMTB mtb) {
         super(talla, disponible, pesoCuadro, precio, id, ultimoId, fabricante, material, color, sexo);
         this.platos=platos;
         this.diametroRueda=diametroRueda;
@@ -68,7 +72,7 @@ public class Mtb extends Bicicleta{
 
     /**
      *
-     *Método de sobreescritura que nos mostrará todos los datos de la clase y clase padre.  
+     *Método de sobreescritura que nos mostrará todos los datos de la clase y clase padre.
      *
      * **/
     @Override

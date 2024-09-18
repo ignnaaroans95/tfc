@@ -1,4 +1,4 @@
-package es.isuarez.pro2.tfc.bicicleta.enums.talla;
+package es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.talla;
 
 /**
  * Respresenta el tamaño del cuadro de la bicicleta en función a la
