@@ -1,11 +1,8 @@
 package es.isuarez.pro2.tfc.bicicleta;
 
-import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.CantidadPlatos;
-import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Color;
-import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Fabricante;
-import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Material;
-import es.isuarez.pro2.tfc.bicicleta.enums.persona.Sexo;
-import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.talla.DiametroRueda;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.*;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.talla.DiametroRuedaBicicleta;
+import es.isuarez.pro2.tfc.bicicleta.enums.persona.Genero;
 import es.isuarez.pro2.tfc.bicicleta.enums.tipoMTB.*;
 
 
@@ -17,14 +14,13 @@ public class Mtb extends Bicicleta{
 
 
     private CantidadPlatos platos;
-    private DiametroRueda diametroRueda;
     protected tipoMTB mtb;
 
 
 
     /**
      * Constructor de la clase.Hereda todos los atributos de la clase padre -> Bicicleta . Además está compuesto
-     * por los atributos de la clase padre
+     * por los atributos propios de la clase.
      *
      * @param talla
      * @param disponible
@@ -35,12 +31,11 @@ public class Mtb extends Bicicleta{
      * @param fabricante
      * @param material
      * @param color
-     * @param sexo
+     * @param genero
      */
-    public Mtb(String talla, boolean disponible, String pesoCuadro, double precio, int id, int ultimoId, Fabricante fabricante, Material material, Color color, Sexo sexo, CantidadPlatos platos, DiametroRueda diametroRueda, tipoMTB mtb) {
-        super(talla, disponible, pesoCuadro, precio, id, ultimoId, fabricante, material, color, sexo);
+    public Mtb(String talla, boolean disponible, String pesoCuadro, double precio, int id, int ultimoId, Fabricante fabricante, Material material, Color color, Genero genero, CantidadPlatos platos, DiametroRuedaBicicleta diametroRueda, tipoMTB mtb) {
+        super(talla, disponible, pesoCuadro, precio, id, ultimoId, fabricante,diametroRueda, material, color, genero);
         this.platos=platos;
-        this.diametroRueda=diametroRueda;
         this.mtb=mtb;
 
     }
@@ -54,13 +49,6 @@ public class Mtb extends Bicicleta{
     /**
      *
 
-    /**
-     * Nos retornará el diámetro de la rueda como una constante
-     * @return
-     */
-    public DiametroRueda getDiametroRueda() {
-        return diametroRueda;
-    }
     /**
     /***
      *
