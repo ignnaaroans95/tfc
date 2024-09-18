@@ -1,9 +1,8 @@
 package es.isuarez.pro2.tfc.bicicleta;
 
-import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Color;
-import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Fabricante;
-import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Material;
-import es.isuarez.pro2.tfc.bicicleta.enums.persona.Sexo;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.*;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.talla.DiametroRuedaBicicleta;
+import es.isuarez.pro2.tfc.bicicleta.enums.persona.Genero;
 
 public class Carretera extends Bicicleta {
 
@@ -15,9 +14,9 @@ public class Carretera extends Bicicleta {
      * correspondiente
      **/
     public Carretera(String talla, boolean disponible, String pesoCuadro,
-                     double precio, int id, int ultimoId, Fabricante fabricante,
-                     Material material, Color color,Sexo sexo, float pesoTotal) {
-        super(talla, disponible, pesoCuadro, precio, id, ultimoId, fabricante, material, color, sexo);
+                     double precio, int id, int ultimoId, Fabricante fabricante, DiametroRuedaBicicleta diametrorueda,
+                     Material material, Color color, Genero genero, float pesoTotal) {
+        super(talla, disponible, pesoCuadro, precio, id, ultimoId, fabricante,diametrorueda, material, color, genero);
         this.pesoTotal = pesoTotal;
     }
 

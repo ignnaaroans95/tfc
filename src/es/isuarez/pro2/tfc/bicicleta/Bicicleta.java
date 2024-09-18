@@ -1,9 +1,8 @@
 package es.isuarez.pro2.tfc.bicicleta;
 
-import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Color;
-import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Fabricante;
-import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Material;
-import es.isuarez.pro2.tfc.bicicleta.enums.persona.Sexo;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.*;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.talla.DiametroRuedaBicicleta;
+import es.isuarez.pro2.tfc.bicicleta.enums.persona.Genero;
 
 
 /**
@@ -30,25 +29,28 @@ public class Bicicleta {
      * innmutables de los propios artículos.
      **/
     private Fabricante fabricante;
+    private DiametroRuedaBicicleta diametroRueda;
     private Material material;
     private Color color;
-    private Sexo sexo;
+    private Genero genero;
 
 
     /**
      * Constructor de la clase.
      **/
 
-    public Bicicleta(String talla, boolean disponible, String pesoCuadro, double precio, int id, int ultimoId, Fabricante fabricante, Material material, Color color, Sexo sexo) {
+    public Bicicleta(String talla, boolean disponible, String pesoCuadro, double precio, int id, int ultimoId,
+                     Fabricante fabricante,DiametroRuedaBicicleta diametroRueda, Material material, Color color, Genero genero) {
         this.talla = talla;
         this.disponible = disponible;
         this.pesoCuadro = pesoCuadro;
         this.precio = precio;
         this.id = ++ultimoId;
         this.fabricante = fabricante;
+        this.diametroRueda = diametroRueda;
         this.material = material;
         this.color = color;
-        this.sexo = sexo;
+        this.genero = genero;
     }
 
 
@@ -157,6 +159,22 @@ public class Bicicleta {
         return material;
     }
 
+    public DiametroRuedaBicicleta getDiametroRueda() {
+        return diametroRueda;
+    }
+
+    public void setDiametroRueda(DiametroRuedaBicicleta diametroRueda) {
+        this.diametroRueda = diametroRueda;
+    }
+
+    public Genero getGenero() {
+        return genero;
+    }
+
+    public void setGenero(Genero genero) {
+        this.genero = genero;
+    }
+
     /**
      * @param material
      */
@@ -179,13 +197,6 @@ public class Bicicleta {
         this.color = color;
     }
 
-    public Sexo getSexo() {
-        return sexo;
-    }
-
-    public void setSexo(Sexo sexo) {
-        this.sexo = sexo;
-    }
 
     /**
      * Método que nos devuelve impresos todos los atributos del artículo.
@@ -200,9 +211,10 @@ public class Bicicleta {
                 "\nId: " + this.getId() +
                 "\nUltimo Id: " + this.getUltimoId() +
                 "\nFabricante: " + this.getFabricante() +
+                "\nDiametro de la rueda: " + this.getDiametroRueda() +
                 "\nMaterial: " + this.getMaterial() +
                 "\nColor: " + this.getColor() +
-                "\nSexo: " + this.getSexo();
+                "\nGénero: " + this.getGenero();
 
 
     }
