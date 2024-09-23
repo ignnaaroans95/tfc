@@ -1,11 +1,10 @@
 package es.isuarez.pro2.tfc;
 
 import es.isuarez.pro2.tfc.bicicleta.Bicicleta;
-import es.isuarez.pro2.tfc.bicicleta.enums.Color;
-import es.isuarez.pro2.tfc.bicicleta.enums.Fabricante;
-import es.isuarez.pro2.tfc.bicicleta.enums.Material;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Color;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Fabricante;
+import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.Material;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Tienda {
