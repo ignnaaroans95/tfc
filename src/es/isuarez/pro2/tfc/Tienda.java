@@ -6,6 +6,7 @@ import es.isuarez.pro2.tfc.bicicleta.enums.caracteristicas.talla.DiametroRuedaBi
 import es.isuarez.pro2.tfc.bicicleta.enums.persona.Genero;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Tienda {
@@ -52,16 +53,43 @@ public class Tienda {
                 Fabricante.SPECIALIZED, DiametroRuedaBicicleta.RUEDA_700C, Material.ALUMINIO, Color.NEGRO, Genero.HOMBRE));
     }
 
+    /**Método que filtra las bicicletas en stock según multiples criterios(talla,peso,precio,id,fabricante,diametro
+     * material,color y género )**/
+
     private static void filtrarBicicletas(Scanner sc, ArrayList<Bicicleta> bicicletas) {
         System.out.println("Filtrar por: ");
-        filtrar(); // Muestra opciones de filtrado
+        /**Muestra las opciones de filtrado a través de un método modularizado. **/
+
+        filtrar();
         int fil = obtenerEntradaEntera(sc);
 
         switch (fil) {
             case 1:
                 System.out.println("Filtrando por Talla...");
-                // Lógica para filtrar por talla
+                // Solicitar al usuario que ingrese la talla deseada
+                System.out.print("Ingrese la talla (ej. 'M', 'L'): ");
+                String talla = sc.nextLine().trim();
+
+                // Filtrar las bicicletas por talla
+                ArrayList<Bicicleta> bicicletasFiltradas = new ArrayList<>();
+                for (Bicicleta bici : bicicletas) {
+                    if (bici.getTalla().equalsIgnoreCase(talla)) {
+                        bicicletasFiltradas.add(bici);
+                    }
+                }
+
+            /**Se muestran las bicicletas filtradas. En caso de que esté vacío , se nos mostrará un mensaje
+             * indicándonos que no hay bicicletas disponibles con la talla solicitada. */
+                if (bicicletasFiltradas.isEmpty()) {
+                    System.out.println("No se encontraron bicicletas con la talla: " + talla);
+                } else {
+                    System.out.println("Bicicletas encontradas con la talla " + talla + ":");
+                    for (Bicicleta bici : bicicletasFiltradas) {
+                        System.out.println(bici);
+                    }
+                }
                 break;
+
             case 2:
                 System.out.println("Filtrando por Peso...");
                 // Lógica para filtrar por peso
